@@ -160,6 +160,15 @@ tsconfig.json을 이용하여 javascript의 버전 같은것도 지정 할 수 �
 ---------------------------------------------------------------
 
 import crypto from "crypto"; -> 를 하면 보통
-
 crypto.d.ts가 없어서 에러가 나는데 최신 노드 모듈을 이용하면 이거까지 설치가 되기 떄문에 에러가 나지 않는다.
+
+만약 import를 했는데 d.ts 파일이 없는 패키지가 있다면,
+https://github.com/DefinitelyTyped/DefinitelyTyped 이 사이트에가서 찾아보면 되는데,
+위와 같은 crypto는 노드모듈에 있는 패키지기 때문에
+npm i -D @types/node
+명령어를 사용해서 nodejs를 위한 타입들을 다 설치해 주면 된다.
+
+ 
+
+
 
