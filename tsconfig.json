@@ -2,10 +2,10 @@
     "include": ["src"],
     "compilerOptions": {
         "outDir": "build", //어디에
-        "esModuleInterop": true,
         "target": "ES6", //자바스크립트 버전
-        "lib": ["ES6", "DOM"], // 런타임 환경 설정 -> 자바스크립트 코드가 어떤 환경에서 작동할지 설정. DOM을 쓰면 브라우저 환경이라는것을 알려주는데, 그러면 타입스크립트 코드에서 document 등등을 사용할 수 있게 됌.
+        "lib": ["ES6"], // 런타임 환경 설정 -> 자바스크립트 코드가 어떤 환경에서 작동할지 설정. DOM을 쓰면 브라우저 환경이라는것을 알려주는데, 그러면 타입스크립트 코드에서 document 등등을 사용할 수 있게 됌.
         "strict": true,
-        "allowJs": true
+        "esModuleInterop": true,
+        "module": "CommonJS"
     }
 }
